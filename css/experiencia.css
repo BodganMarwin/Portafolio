@@ -1,0 +1,59 @@
+.experience__section__title{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.experiencie__box{
+    width: 100%;
+    padding: 16px 0;
+}
+.experience__img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.experience__title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.experience__text{
+    padding: 8px 0;
+}
+.experience__repo{
+    margin-right: 1rem;
+}
+.experiencia__botao--repo{
+    color: var(--color-fuente-azul);
+    border-color: var(--color-boton-azul);
+}
+.experience__botao--demo{
+    color: var(--color-fuente-blanco);
+    background-color: var(--color-boton-azul);
+    border-color: var(--color-boton-azul);
+}
+@media screen and (min-width: 768px){
+    .experiencie__box{
+        padding-top: 32px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .experience__img{
+        width: 70%;
+        margin-right: 16px;
+    }
+    .experiencie__box:nth-child(2n){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .experiencie__box:nth-child(odd){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .experience__title{
+        font-size: 1.4rem;
+    }
+    .experiencie__box:nth-child(2n) .experience__info{
+        /*margin-left: 16px;*/
+    }
+}

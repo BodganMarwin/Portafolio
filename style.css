@@ -1,0 +1,156 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --background-color-gris-claro: #F5F5F5;
+    --background-color-gris-oscuro: #E5E5E5;
+    --background-color-azul: #EAF2FD;
+    --background-color-blanco: #ffffff;
+
+   --corlor-de-link: #000;
+
+    --fuente-raleway: 'Raleway', sans-serif;;
+
+    --color-fuente: #464646;
+    --color-fuente-azul: #2A7AE4;
+    --color-fuente-blanco: #FFFFFF;
+    --color-fuente-sobre-mi: #EAF2FD;
+
+    --color-boton-azul: #2A7AE4;
+
+    --color-sombra: #C8C8C8;
+    --color-sombra-seleccionado: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background-color-gris-claro) ;
+    font-family: var(--fuente-raleway);
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1;
+    /*width: 1440px;*/
+    color: var(--color-fuente);
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--corlor-de-link);
+}
+.tudo{
+    margin: 0 auto;
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/*Sección Title*/
+
+section.title{
+    /*margin-bottom: 1rem;*/
+    padding: 1rem;
+}
+
+/*Sección About*/
+
+section.about{
+    padding: 1rem;
+    background: var(--background-color-azul);
+}
+
+/*Sección Skills*/
+
+section.skills{
+    padding: 1rem;
+    background: var(--background-color-gris-claro);
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    padding: 1rem;
+    background: var(--background-color-gris-claro);
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+    background: var(--background-color-azul);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* experiencia*/
+
+section.experience{
+    background: var(--background-color-gris-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+button {
+    padding: 12px 16px;
+    font-weight: 600;
+    border-radius: .3rem;
+}
+
+/*Contacto*/
+
+section.formcontato{
+    background: var(--background-color-azul);
+    padding: 2rem;
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    /*Sección Menu*/
+    section.menu, section.title, section.about, section.skills, section.hobbies, section.academic, section.experience, section.formcontato{
+        padding: 2rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (min-width: 1024px) {
+    /*Sección Menu*/
+    section.menu, section.title, section.about, section.skills, section.hobbies, section.academic, section.experience, section.formcontato{
+        padding: 32px 152px;
+    }
+
+}
