@@ -19,12 +19,14 @@ coloque nas sessões indicadas*/
     --color-fuente: #464646;
     --color-fuente-azul: #2A7AE4;
     --color-fuente-blanco: #FFFFFF;
+    --color-fuente-rojo: red;
     --color-fuente-sobre-mi: #EAF2FD;
 
     --color-boton-azul: #2A7AE4;
 
     --color-sombra: #C8C8C8;
     --color-sombra-seleccionado: #2A7AE4;
+    --color-sombra-error: red;
 }
 
 body {

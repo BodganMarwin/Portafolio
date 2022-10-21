@@ -13,6 +13,7 @@
     font-size: 12px;
 }
 .formcontato__input{
+    background: var(--background-color-blanco);
     width: 95%;
     height: 56px;
     padding-left: 12px;
@@ -23,6 +24,13 @@
 }
 .formcontato__input:focus{
     box-shadow: 0 2px 0 0 var(--color-sombra-seleccionado);
+}
+.formcontato__input-error{
+    color: var(--color-fuente-rojo);
+    box-shadow: 0 1px 0 0 var(--color-sombra-error);
+}
+.formcontato__input-error::placeholder{
+    color: var(--color-fuente-rojo);
 }
 .formcontato__textarea{
     font-family: var(--fuente-raleway);

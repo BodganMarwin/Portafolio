@@ -273,11 +273,11 @@
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre" required maxlength="50">
-                        <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                        <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                    <form action="index.html" class="formcontato__form" name="form">
+                        <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre" required data-type="nombre">
+                        <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail" required data-type="email">
+                        <input class="formcontato__input" type="text" id="asunto" name="asunto" placeholder="Assunto" data-type="asunto">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" data-type="mensaje"></textarea>
                         <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                     </form>
                 </div>
@@ -293,6 +293,6 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script type="module" src="validacion.js"></script>
 </body>
 </html>
